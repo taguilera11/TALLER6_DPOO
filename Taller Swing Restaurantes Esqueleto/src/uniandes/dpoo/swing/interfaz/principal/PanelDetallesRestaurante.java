@@ -48,6 +48,7 @@ public class PanelDetallesRestaurante extends JPanel
     	
     	JLabel etiquetaVisitado = new JLabel("Visitado: ");
     	chkVisitado = new JCheckBox();
+    	chkVisitado.setEnabled(false);
     	chkVisitado.setSelected(false);
 
         // Organiza los elementos en la venta
@@ -76,6 +77,9 @@ public class PanelDetallesRestaurante extends JPanel
     	
     	if (visitado){
     		chkVisitado.setSelected(true);;
+    	}
+    	else {
+    		chkVisitado.setSelected(false);
     	}
     	
     }
